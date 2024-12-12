@@ -30,7 +30,7 @@ const CountryList = ({ continent, navigation }: CountryListProps) => {
         >
           <View style={styles.itemContent}>
             <Image source={{ uri: item.flags.png }} style={styles.image} />
-            <View style={styles.textContainer}>
+            <View >
               <Text style={styles.name}>{item.name.common}</Text>
               <Text style={styles.detail}>Capital: {item.capital?.[0] || 'N/A'}</Text>
               <Text style={styles.detail}>Languages: {item.languages ? Object.values(item.languages).join(', ') : 'N/A'}</Text>
